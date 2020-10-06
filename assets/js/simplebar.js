@@ -3888,7 +3888,7 @@
         } else {
           // Prepare DOM
           this.wrapperEl = document.createElement('div');
-          this.contentEl = document.createElement('div');
+          this.contentEl = document.createElement('div');         
           this.offsetEl = document.createElement('div');
           this.maskEl = document.createElement('div');
           this.placeholderEl = document.createElement('div');
@@ -3904,6 +3904,7 @@
 
           while (this.el.firstChild) {
             this.contentEl.appendChild(this.el.firstChild);
+            // this.offsetEl.appendChild(this.el.firstChild);
           }
 
           this.offsetEl.appendChild(this.contentEl);
